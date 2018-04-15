@@ -1,0 +1,9 @@
+  language: java
+  before_install:
+   - chmod +x gradlew
+   notifications:
+     email: false
+  after_failure:
+    - curl -v -H User-Agent:bot -H Content-Type:application/json -d '{"content":"Build has failed!"}' https://discordapp.com/api/webhooks/$DISCORD_ID/$DISCORD_TOKEN
+  after_success:
+    - curl -v -H User-Agent:bot -H Content-Type:application/json -d '{"content":"Build successfully built!"}' https://discordapp.com/api/webhooks/$DISCORD_ID/$DISCORD_TOKEN
