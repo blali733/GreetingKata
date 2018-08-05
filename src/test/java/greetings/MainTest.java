@@ -15,4 +15,9 @@ public class MainTest {
 
     @Test
     public void testGreetNullName(){ assertEquals("Hello, my friend.", greetings.greet(null)); }
+
+
+    @Test
+    public void testGreetShout(){ assertEquals("HELLO, JERRY!", greetings.greet("JERRY")); }
+
 }
