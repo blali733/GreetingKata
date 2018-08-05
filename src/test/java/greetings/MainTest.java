@@ -20,4 +20,7 @@ public class MainTest {
     @Test
     public void testGreetShout(){ assertEquals("HELLO, JERRY!", greetings.greet("JERRY")); }
 
+    @Test
+    public void testGreetVarargs(){assertEquals("Hello, Jill and Jane.", greetings.greet("Jill", "Jane"));}
+
 }
