@@ -23,4 +23,7 @@ public class MainTest {
     @Test
     public void testGreetVarargs(){assertEquals("Hello, Jill and Jane.", greetings.greet("Jill", "Jane"));}
 
+    @Test
+    public void testGreetMultipleNames(){assertEquals("Hello, Jill, Jane, and Mike.", greetings.greet("Jill", "Jane", "Mike"));}
+
 }
